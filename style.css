@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {
+		background:#CCC;
+}
+
+#wrapper {
+		width: 80%;
+		height: 100px;
+		margin: 0 auto;
+		}
+		
+	#obrazek {
+		background: none;
+		position: relative;
+		top: 50px;
+		left: 50px;
+
+		-moz-animation-name: przesun;
+		-moz-animation-duration: 1s;
+		-moz-animation-delay:1s;
+		-moz-animation-iteration-count: 4;
+		-moz-animation-fill-mode:both;   none/forwards/backwards/both;
+		-moz-animation-direction:reverse;  //normal/reverse/alternate/alternate-reverse;
+		
+		
+		-webkit-animation-duration: 4s;
+		-webkit-animation-name : przesun;
+		
+		}
+		
+		@-webkit-keyframes przesun {
+		from {-webkit-transform: translateX(0px);}
+		to {-webkit-transform: translateX(400px);}
+		}
+		
+		@-moz-keyframes przesun {
+		0%{-moz-transform: translateX(0px);}
+		33%{-moz-transform: translateX(400px);}
+		66%{-moz-transform: translateX(200px);}
+		100%{-moz-transform: translateX(400px);}
+		}
+		
+		
+		
+		
+		
+		
+		
