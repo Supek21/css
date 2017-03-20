@@ -15,4 +15,19 @@ body {
 		position: relative;
 		top: 50px;
 		left: 50px;
-	}
+
+		-moz-animation-name: przesun;
+		-moz-animation-duration: 4s;
+		-webkit-animation-duration: 4s;
+		-webkit-animation-name : przesun;
+		}
+		
+		@-webkit-keyframes przesun {
+		from {-webkit-transform: translateX(0px);}
+		to {-webkit-transform: translateX(400px);}
+		}
+		
+		@-moz-keyframes przesun {
+		from{-moz-transform: translateX(0px);}
+		to{-moz-transform: translateX(400px);}
+		}
